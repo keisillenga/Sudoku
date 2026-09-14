@@ -18,4 +18,13 @@ body {
   max-width: 600%;
   padding: 30px;
 }
+h1{
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.subtitle{
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+  
   
