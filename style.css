@@ -34,5 +34,16 @@ h1{
   margin: 0 auto  25px;
   border: 3px solid white;
 }
+.cell {
+  width: 100%;
+  aspect-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: #1b1b1b;
+  border: 1px solid #555;
+  outline: none
+}
+  
   
   
