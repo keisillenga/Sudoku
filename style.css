@@ -44,6 +44,12 @@ h1{
   border: 1px solid #555;
   outline: none
 }
+.cell:focus {
+  background-color: #3b2028;
+}
+.cell:nth-child(3n) {
+  border-right: 3px solid white;
+}
   
   
   
