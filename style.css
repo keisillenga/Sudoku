@@ -50,6 +50,13 @@ h1{
 .cell:nth-child(3n) {
   border-right: 3px solid white;
 }
+.cell:nth-child(9n) {
+  border-right: none;
+}
+.cell:nth-child(n + 19):nth-child(-n + 27),
+.cell:nth-child(n + 46):nth-child(-n + 54) {
+  border-bottom: 3px solid white;
+}
   
   
   
