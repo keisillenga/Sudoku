@@ -57,6 +57,11 @@ h1{
 .cell:nth-child(n + 46):nth-child(-n + 54) {
   border-bottom: 3px solid white;
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
   
   
   
