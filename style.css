@@ -61,6 +61,18 @@ h1{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+}
+button {
+  padding:  12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #8f3048;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
 }
   
   
