@@ -84,5 +84,20 @@ button:hover {
   font-weight: bold;
   min-height: 24px;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  .cell {
+    font-size: 18px;
+  }
+  button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
   
   
