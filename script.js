@@ -22,6 +22,27 @@ function createBoard() {
     }
   }
 }
+
+function getBoard() {
+  const cells = document.querySelectorAll(".cell");
+  const board = [];
+  for (let row = 0; row < 9; row++){
+    board[row] = [];
+    for (let col = 0; col < 9; col++){
+      const index = row * 9 + col;
+      const value = cells[index].value;
+
+      if (value === "") {
+        board[row][col] = 0;
+      } else {
+        board[row][col] = Number(value);
+      }
+    }
+  }
+  return  board;
+}
+    
+  
       
       
       
