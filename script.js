@@ -41,6 +41,19 @@ function getBoard() {
   }
   return  board;
 }
+function displayBoard(board) {
+  const cell = document.querySelectorAll(".cell");
+  for (let row = 0; row < 9; row++) {
+    for (let col = 0; col < 9; col++) {
+      const index = row * 9 + col;
+      if (board[row][col] !== 0) {
+        cells[index].value =board[row][col];
+      } else {
+        cells[index].value = "";
+      }
+    }
+  }
+}
     
   
       
