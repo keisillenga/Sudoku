@@ -67,6 +67,18 @@ function findEmpty(board) {
   }
   return null;
 }
+function isValid(board, number, row, col) {
+  for (let c = 0; c < 9; c++) {
+    if (board[row][c] === number) {
+      return false;
+    }
+  }
+  for (let r = 0; r < 9; r++) {
+    if (board[r][row] === number) {
+      return false;
+    }
+  }
+    
     
   
       
