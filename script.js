@@ -78,6 +78,18 @@ function isValid(board, number, row, col) {
       return false;
     }
   }
+  const boxRow = Math.floor(row / 3) * 3;
+  const boxCol = Math.floor(col / 3) * 3;
+
+  for (let r = boxRow; r < boxRow + 3; r++) {
+    for (let c = boxCol; c < boxCol + 3; c++) {
+      if (board[r][c] === number) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
     
     
   
