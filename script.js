@@ -90,6 +90,14 @@ function isValid(board, number, row, col) {
   }
   return true;
 }
+function solveSudoku(board) {
+  const empty = findEmpty(board);
+
+  if (empty === null) {
+    return true;
+  }
+  const row = empty.row;
+  const col = empty.col;
     
     
   
