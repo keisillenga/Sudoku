@@ -98,7 +98,19 @@ function solveSudoku(board) {
   }
   const row = empty.row;
   const col = empty.col;
-    
+  
+  for (let  number = 1; number <= 9; number++) {
+    if(isValid(board, number, row, col)) {
+      board[row][col] = number;
+
+      if (solveSudoku(board)) {
+        return true;
+      }
+
+      board[row][col] = 0;
+    }
+  }return false;
+}
     
   
       
