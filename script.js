@@ -111,6 +111,22 @@ function solveSudoku(board) {
     }
   }return false;
 }
+function hasValidNumbers(board) {
+  for (let row = 0; row < 9; row++) {
+    for (let col = 0; col < 9; col++) {
+      const number =board[row][col];
+      if (number !== 0) {
+        board[row][col] = 0;
+        if (!isValid(board, number, row, col)) {
+          board[row][col] = number;
+          return false;
+        }
+        board[row][col] = number;
+      }
+    }
+  } 
+  return true;
+}
     
   
       
