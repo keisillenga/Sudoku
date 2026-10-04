@@ -127,7 +127,14 @@ function hasValidNumbers(board) {
   } 
   return true;
 }
-    
+solveButton.addEventListener("click", function () {
+  message.textContent = "";
+  const board = getBoard();
+
+  if (!hasValidNumbers(board)) {
+    message.textContent = "The puzzle contains invalid numbers.";
+    return;
+  }
   
       
       
