@@ -135,6 +135,13 @@ solveButton.addEventListener("click", function () {
     message.textContent = "The puzzle contains invalid numbers.";
     return;
   }
+  if  (solveSudoku(board)) {
+    displayBoard(board);
+    message.textContent = "Sudoku solved!";
+  } else {
+    message.textContent = "This Sudoku has no  solution.";
+  }
+});
   
       
       
