@@ -142,6 +142,18 @@ solveButton.addEventListener("click", function () {
     message.textContent = "This Sudoku has no  solution.";
   }
 });
+checkButton.addEventListener("click", function () {
+  message.textContent = "";
+  const board = getBoard();
+
+  for (let row = 0; row < 9; row++) {
+    for (let col = 0; col < 9; col++)  {
+      if  (board[row][col] === 0) {
+        message.textContent = " The sudoku is not  complete.";
+        return ;
+      }
+    }
+  }
   
       
       
