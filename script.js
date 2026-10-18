@@ -150,11 +150,23 @@ checkButton.addEventListener("click", function () {
     for (let col = 0; col < 9; col++)  {
       if  (board[row][col] === 0) {
         message.textContent = " The sudoku is not  complete.";
-        return ;
+        return;
       }
     }
   }
-  
+  for (let row = 0; row < 9; row++) {
+    for (let col = 0; col < 9; col++) {
+      const number = board[row][col];
+      board[row][col] = 0;
+      const  valid = isValid(board, number, row, col);
+      board[row][col] = number;
+
+      if (!valid) {
+        message.textContent = " There is a mistake in the Sudoku.";
+        return;
+      }
+    }
+  }
       
       
       
