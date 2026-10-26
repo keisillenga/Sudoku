@@ -167,7 +167,16 @@ checkButton.addEventListener("click", function () {
       }
     }
   }
-      
+  message.textContent = "CONGRATULATIONS ! Sudoku is correct !";
+});
+clearButton.addEventListener("click", function () {
+  const cells = document.querySelectorAll(".cell");
+  cells.forEach(function (cell) {
+    cell.value = "";
+  });
+  message.textCintent = "";
+});
+
       
       
          
